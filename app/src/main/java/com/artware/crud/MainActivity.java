@@ -29,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("nom", nom.getText().toString());
                 i.putExtra("classe", classe.getText().toString());
                 startActivity(i);
+                nom.setText("");
+                classe.setText("");
             }
         });
     }

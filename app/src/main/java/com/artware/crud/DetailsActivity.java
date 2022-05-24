@@ -23,7 +23,6 @@ public class DetailsActivity extends AppCompatActivity {
 
         nom = findViewById(R.id.editTextNomDetail);
         classe = findViewById(R.id.editTextClasseDetail);
-
         edit = findViewById(R.id.buttonEdit);
         delete = findViewById(R.id.buttonDelete);
 

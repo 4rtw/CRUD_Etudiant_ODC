@@ -15,12 +15,13 @@
         android:inputType="textPersonName"
         android:text="Name" />
 
-    <EditText
+    tee1<EditText
         android:id="@+id/editTextClasseDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:text="Name" />
 
     <LinearLayout
@@ -33,7 +34,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Modifier" />
+            android:text="Modifier"
+            app:icon="@drawable/ic_baseline_edit_24"
+            app:iconGravity="textStart" />
 
         <Button
             android:id="@+id/buttonDelete"
