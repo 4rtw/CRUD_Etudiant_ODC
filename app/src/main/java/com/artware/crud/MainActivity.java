@@ -11,7 +11,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     EditText nom, classe;
-    Button ajouter;
+    Button ajouter, goToList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
         nom = findViewById(R.id.editTextNom);
         classe = findViewById(R.id.editTextClasse);
         ajouter = findViewById(R.id.buttonAjouter);
+        goToList = findViewById(R.id.goToListButton);
 
         ajouter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
                 nom.setText("");
                 classe.setText("");
+            }
+        });
+
+        goToList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(), ListActivity.class);
+                startActivity(i);
             }
         });
     }

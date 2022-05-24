@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="20dp"
     tools:context=".MainActivity">
 
     <EditText
@@ -27,6 +28,18 @@
         android:id="@+id/buttonAjouter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ajouter" />
+        android:layout_marginTop="15dp"
+        android:text="Ajouter"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:iconGravity="textStart" />
+
+    <Button
+        android:id="@+id/goToListButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF7043"
+        android:text="Voir la liste"
+        app:icon="@drawable/ic_baseline_view_list_24"
+        app:iconGravity="textStart" />
 
 </LinearLayout>

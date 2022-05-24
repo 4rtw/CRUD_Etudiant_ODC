@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="15dp"
     android:orientation="vertical"
     tools:context=".DetailsActivity">
 
@@ -15,7 +16,9 @@
         android:inputType="textPersonName"
         android:text="Name" />
 
-    tee1<EditText
+    tee1
+
+    <EditText
         android:id="@+id/editTextClasseDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -33,6 +36,7 @@
             android:id="@+id/buttonEdit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:layout_weight="1"
             android:text="Modifier"
             app:icon="@drawable/ic_baseline_edit_24"
@@ -42,7 +46,10 @@
             android:id="@+id/buttonDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="5dp"
             android:layout_weight="1"
-            android:text="Supprimer" />
+            android:backgroundTint="#EC407A"
+            android:text="Supprimer"
+            app:icon="@drawable/ic_baseline_delete_24" />
     </LinearLayout>
 </LinearLayout>
